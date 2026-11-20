@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Sky Blue (#0099FF) + Cloudy White (#FDFDFE) + Amber Red (#E8250E) Design System */
+  --color-navy-950: #061C38;
+  --color-navy-900: #082447;
+  --color-navy-800: #0D3566;
+  --color-sky-500: #0099FF;
+  --color-sky-600: #0080DC;
+  --color-sky-700: #0066B8;
+  --color-cobalt-700: #007AE0;
+  --color-cobalt-600: #0099FF;
+  --color-accent-500: #E8250E;
+  --color-accent-600: #C91E09;
+  --color-accent-400: #FF513B;
+  --color-accent-50: #FFF0EE;
+  --color-surface-50: #F2F8FD;
+  --color-surface-100: #DFECF7;
+  --color-cloudy: #FDFDFE;
+  --color-ink-900: #082447;
+  --color-ink-600: #364B63;
+  --color-ink-500: #536880;
+  --color-whatsapp: #25D366;
+
+  --font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: var(--color-ink-900);
+    background-color: #fdfdfe;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #fdfdfe;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Bright Sky Blue atmospheric gradient band inspired by Uplift (#0099FF -> #0066C2) */
+.sky-band-gradient {
+  background: linear-gradient(180deg, #0099ff 0%, #007de0 55%, #0064bd 100%);
+}
+
+/* Signature dot-grid card texture tinted with Sky Blue on Cloudy White */
+.bardi-dot-card {
+  background-color: #fdfdfe;
+  background-image: radial-gradient(rgba(0, 153, 255, 0.14) 1.2px, transparent 1.2px);
+  background-size: 14px 14px;
+}
+
+/* Signature subtle diagonal architectural texture on Cloudy Mist */
+.bardi-diagonal-band {
+  background-color: #f2f8fd;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 153, 255, 0.045) 0px,
+    rgba(0, 153, 255, 0.045) 1px,
+    transparent 1px,
+    transparent 18px
+  );
+}
+
+/* Signature large soft circular arc watermark tinted in Sky Blue */
+.bardi-arc-band {
+  position: relative;
+  overflow: hidden;
+}
+
+.bardi-arc-band::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: -140px;
+  width: 560px;
+  height: 560px;
+  border-radius: 9999px;
+  background: rgba(0, 153, 255, 0.055);
+  pointer-events: none;
+}
+
+.bardi-arc-band::after {
+  content: "";
+  position: absolute;
+  bottom: -160px;
+  right: -120px;
+  width: 480px;
+  height: 480px;
+  border-radius: 9999px;
+  border: 42px solid rgba(0, 153, 255, 0.04);
+  pointer-events: none;
+}

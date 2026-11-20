@@ -1,10 +1,5 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/BrandMark";
-import {
-  ComplianceShieldIcon,
-  TransparentQuoteIcon,
-  DirectDispatchIcon,
-} from "@/components/TradeIcons";
 import { buildWhatsAppUrl, type SiteContent } from "@/lib/content";
 
 interface FooterProps {
@@ -18,8 +13,6 @@ export function Footer({ content }: FooterProps) {
       ? "Hai RapiWorks KL, saya ingin meminta sebut harga."
       : "Hi RapiWorks KL, I would like to request a free quotation."
   );
-
-  const pillarIcons = [ComplianceShieldIcon, TransparentQuoteIcon, DirectDispatchIcon];
 
   return (
     <footer className="bg-surface-50 text-ink-900">
@@ -142,34 +135,10 @@ export function Footer({ content }: FooterProps) {
         </div>
       </div>
 
-      {/* White Trust Pillars Strip (mirroring Bardi's white credentials strip above legal bar) */}
-      <div className="border-t border-surface-100 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-7 sm:px-6 md:grid-cols-3 lg:px-8">
-          {footer.pillars.map((pillar, idx) => {
-            const Icon = pillarIcons[idx] ?? ComplianceShieldIcon;
-            return (
-              <div key={pillar.title} className="flex items-center gap-3.5">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-white">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <div>
-                  <div className="font-display text-xs font-bold uppercase tracking-wider text-navy-900">
-                    {pillar.title}
-                  </div>
-                  <p className="mt-0.5 text-xs text-ink-600">{pillar.description}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Deep Navy Legal & Compliance Bar */}
+      {/* Bottom Powered-By Bar */}
       <div className="bg-navy-950 text-slate-300">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-2.5 px-4 py-4 text-[11px] sm:px-6 lg:flex-row lg:items-center lg:px-8">
-          <p className="font-medium text-white">{footer.copyright}</p>
-          <p className="text-slate-400">{footer.complianceNote}</p>
-          <p className="shrink-0 text-slate-300">
+        <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-4 text-center text-xs sm:px-6 lg:px-8">
+          <p className="text-slate-300">
             Powered by{" "}
             <a
               href="https://acumoai.com"

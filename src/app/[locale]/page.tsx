@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowDown, ArrowRight, Check, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import {
-  CredibilityCircleMark,
   RapiWorksPassGraphic,
   ServiceTradeIcon,
   WhyChooseBlobEmblem,
@@ -151,45 +150,25 @@ export default async function HomePage({
                 <ArrowDown className="h-3.5 w-3.5 text-cloudy" />
               </a>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* 2. CREDIBILITY 4-STAT BAND (Cloudy White #FDFDFE) */}
-      <section className="bg-cloudy py-14 sm:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-display text-2xl font-semibold tracking-tight text-navy-900 sm:text-[32px]">
-            {credibility.heading}
-          </h2>
-
-          <div className="mt-10 grid grid-cols-2 gap-y-10 lg:grid-cols-4">
-            {credibility.items.map((item, idx) => (
-              <div
-                key={item.label}
-                className="relative flex flex-col items-center px-4 text-center"
-              >
-                <div className="relative flex h-24 w-24 items-center justify-center">
-                  <CredibilityCircleMark
-                    index={idx}
-                    className="absolute inset-0 h-24 w-24"
-                  />
-                  <span className="relative z-10 whitespace-nowrap font-display text-4xl font-bold tracking-tight text-navy-900 sm:text-[42px]">
+            {/* Clean 4-Stat Proof Strip (Value + Title Only) */}
+            <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 border-t border-white/25 pt-6 sm:grid-cols-4">
+              {credibility.items.map((item) => (
+                <div key={item.label}>
+                  <div className="font-display text-2xl font-extrabold leading-none tracking-tight text-cloudy sm:text-3xl">
                     {item.value}
-                  </span>
+                  </div>
+                  <div className="mt-1.5 text-xs font-medium leading-snug text-white/90">
+                    {item.label}
+                  </div>
                 </div>
-                <div className="-mt-1 font-display text-sm font-semibold text-navy-900 sm:text-base">
-                  {item.label}
-                </div>
-                <p className="mt-1 max-w-[200px] text-xs font-light leading-relaxed text-ink-500">
-                  {item.sublabel}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 3. WHY LOCAL HOMEOWNERS CHOOSE RAPIWORKS KL (Soft Cool Gray — Organic Orange Blobs + Centered H3 + Orange Divider Rule) */}
+      {/* 2. WHY LOCAL HOMEOWNERS CHOOSE RAPIWORKS KL (Soft Cool Gray — Organic Blobs + Centered H3 + Accent Divider Rule) */}
       <section className="bg-surface-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">

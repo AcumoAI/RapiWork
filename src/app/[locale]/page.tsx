@@ -473,17 +473,17 @@ export default async function HomePage({
             {process.steps.map((step) => (
               <div
                 key={step.number}
-                className="rounded-2xl border border-surface-100 bg-white p-7 shadow-[0_6px_26px_rgba(5,59,110,0.08)]"
+                className="rounded-2xl border border-surface-100 bg-white p-6 shadow-[0_6px_26px_rgba(5,59,110,0.08)] sm:p-7"
               >
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-500 font-display text-sm font-bold text-white">
+                <div className="flex items-start gap-5 sm:gap-6">
+                  <div className="flex w-14 shrink-0 items-center justify-center border-r border-surface-100 pr-4 font-display text-6xl font-extrabold leading-none tracking-tighter text-accent-500 select-none sm:w-16 sm:text-[68px]">
                     {step.number}
                   </div>
-                  <div>
-                    <h3 className="pt-1 font-display text-base font-semibold text-navy-900">
+                  <div className="pt-0.5">
+                    <h3 className="font-display text-lg font-semibold text-navy-900">
                       {step.title}
                     </h3>
-                    <p className="mt-2.5 text-[13.5px] font-light leading-relaxed text-ink-600">
+                    <p className="mt-2 text-sm font-normal leading-relaxed text-ink-600">
                       {step.description}
                     </p>
                   </div>

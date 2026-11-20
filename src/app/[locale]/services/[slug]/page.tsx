@@ -79,7 +79,7 @@ export default async function ServiceDetailPage({
             </div>
           </div>
 
-          <div className="overflow-hidden border border-white/15 bg-navy-800 shadow-2xl lg:col-span-5">
+          <div className="overflow-hidden rounded-2xl border border-white/15 bg-navy-800 shadow-2xl lg:col-span-5">
             <img
               src={service.image}
               alt={service.imageAlt}
@@ -92,7 +92,7 @@ export default async function ServiceDetailPage({
       {/* Scope & Ideal Use Cases */}
       <section className="bg-white py-14 sm:py-20">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div className="border border-surface-100 border-t-4 border-t-accent-500 bg-surface-50 p-7 sm:p-8">
+          <div className="overflow-hidden rounded-2xl border border-surface-100 border-t-4 border-t-accent-500 bg-surface-50 p-7 sm:p-8">
             <h2 className="font-display text-xl font-bold text-navy-900">
               {content.pages.includedHeading}
             </h2>
@@ -109,7 +109,7 @@ export default async function ServiceDetailPage({
             </ul>
           </div>
 
-          <div className="border border-surface-100 border-t-4 border-t-navy-900 bg-white p-7 shadow-xs sm:p-8">
+          <div className="overflow-hidden rounded-2xl border border-surface-100 border-t-4 border-t-navy-900 bg-white p-7 shadow-xs sm:p-8">
             <h2 className="font-display text-xl font-bold text-navy-900">
               {content.pages.idealForHeading}
             </h2>
@@ -154,11 +154,11 @@ export default async function ServiceDetailPage({
               <Link
                 key={other.slug}
                 href={`/${locale}/services/${other.slug}`}
-                className="group flex flex-col justify-between border border-surface-100 bg-white p-5 shadow-xs transition-shadow hover:shadow-md"
+                className="group flex flex-col justify-between rounded-2xl border border-surface-100 bg-white p-5 shadow-xs transition-shadow hover:shadow-md"
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <div className="flex h-11 w-11 items-center justify-center border border-surface-100 bg-surface-50 text-navy-900">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-surface-100 bg-surface-50 text-navy-900">
                       <ServiceTradeIcon slug={other.slug} className="h-8 w-8" />
                     </div>
                     <div className="h-0.5 w-8 bg-accent-500" />

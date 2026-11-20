@@ -37,7 +37,7 @@ export function ProjectsGallery({ content }: ProjectsGalleryProps) {
               key={option.key}
               type="button"
               onClick={() => setActiveCategory(option.key)}
-              className={`border px-4 py-2 font-display text-xs font-bold uppercase tracking-wider transition-colors ${
+              className={`rounded-full border px-4 py-2 font-display text-xs font-bold uppercase tracking-wider transition-colors ${
                 isActive
                   ? "border-navy-900 bg-navy-900 text-white"
                   : "border-surface-100 bg-surface-50 text-ink-600 hover:border-navy-900/30 hover:text-navy-900"
@@ -62,7 +62,7 @@ export function ProjectsGallery({ content }: ProjectsGalleryProps) {
             <article
               key={project.id}
               id={project.slug}
-              className="group flex flex-col overflow-hidden border border-surface-100 bg-white shadow-xs transition-shadow hover:shadow-md"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-surface-100 bg-white shadow-xs transition-shadow hover:shadow-md"
             >
               <div className="aspect-[16/10] w-full overflow-hidden bg-surface-100">
                 <img
@@ -95,7 +95,7 @@ export function ProjectsGallery({ content }: ProjectsGalleryProps) {
                   {project.summary}
                 </p>
 
-                <div className="mt-5 border-l-2 border-accent-500 bg-surface-50 px-4 py-3 text-xs text-ink-600">
+                <div className="mt-5 rounded-xl border-l-2 border-accent-500 bg-surface-50 px-4 py-3 text-xs text-ink-600">
                   <div className="flex items-center gap-1.5 font-display font-bold uppercase tracking-wider text-navy-900">
                     <Layers className="h-3.5 w-3.5 text-accent-500" />
                     {projectsSection.materialsLabel}

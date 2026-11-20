@@ -149,7 +149,7 @@ export function Footer({ content }: FooterProps) {
             const Icon = pillarIcons[idx] ?? ComplianceShieldIcon;
             return (
               <div key={pillar.title} className="flex items-center gap-3.5">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-navy-900 text-white">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-white">
                   <Icon className="h-6 w-6" />
                 </div>
                 <div>

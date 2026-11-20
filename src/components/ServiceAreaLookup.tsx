@@ -88,7 +88,7 @@ export function ServiceAreaLookup({ content }: ServiceAreaLookupProps) {
             {/* White input wrapped in crisp Amber Red border + solid Amber Red check button */}
             <form
               onSubmit={handleSubmit}
-              className="mt-7 flex overflow-hidden rounded-md border-2 border-accent-500 bg-cloudy shadow-md"
+              className="mt-7 flex overflow-hidden rounded-xl border-2 border-accent-500 bg-cloudy shadow-md"
             >
               <input
                 type="text"
@@ -108,7 +108,7 @@ export function ServiceAreaLookup({ content }: ServiceAreaLookupProps) {
             </form>
 
             {checkedArea && (
-              <div className="mt-4 border-l-4 border-accent-500 bg-navy-900/80 p-4">
+              <div className="mt-4 rounded-xl border-l-4 border-accent-500 bg-navy-900/80 p-4">
                 <p className="text-sm leading-relaxed text-white">
                   {matchedRegion ? (
                     <>
@@ -247,7 +247,7 @@ export function ServiceAreaLookup({ content }: ServiceAreaLookupProps) {
           </svg>
 
           {/* Subtle clean bottom-right map attribution chip */}
-          <div className="absolute bottom-3 right-3 border border-surface-100 bg-white/95 px-3 py-1.5 text-[11px] font-medium text-ink-600 shadow-xs">
+          <div className="absolute bottom-3 right-3 rounded-xl border border-surface-100 bg-white/95 px-3.5 py-2 text-[11px] font-medium text-ink-600 shadow-xs">
             <span className="mr-2 inline-block h-2 w-2 rounded-full bg-accent-500" />
             {serviceArea.hubAddress}
           </div>

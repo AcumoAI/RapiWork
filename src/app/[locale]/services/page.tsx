@@ -38,10 +38,10 @@ export default async function ServicesPage({
             return (
               <article
                 key={service.slug}
-                className="grid items-center gap-8 overflow-hidden border border-surface-100 bg-surface-50 p-6 sm:p-8 lg:grid-cols-12"
+                className="grid items-center gap-8 overflow-hidden rounded-2xl border border-surface-100 bg-surface-50 p-6 sm:p-8 lg:grid-cols-12"
               >
                 <div
-                  className={`overflow-hidden bg-white shadow-xs lg:col-span-5 ${
+                  className={`overflow-hidden rounded-xl bg-white shadow-xs lg:col-span-5 ${
                     isEven ? "lg:order-2" : ""
                   }`}
                 >
@@ -54,7 +54,7 @@ export default async function ServicesPage({
 
                 <div className={`lg:col-span-7 ${isEven ? "lg:order-1" : ""}`}>
                   <div className="flex items-center gap-3.5">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-surface-100 bg-white text-navy-900">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-surface-100 bg-white text-navy-900">
                       <ServiceTradeIcon slug={service.slug} className="h-9 w-9" />
                     </div>
                     <div>

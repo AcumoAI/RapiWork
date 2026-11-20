@@ -339,7 +339,7 @@ export default async function HomePage({
               return (
                 <article
                   key={project.id}
-                  className="bardi-dot-card flex flex-col overflow-hidden border border-surface-100 shadow-[0_6px_26px_rgba(5,59,110,0.08)]"
+                  className="bardi-dot-card flex flex-col overflow-hidden rounded-2xl border border-surface-100 shadow-[0_6px_26px_rgba(5,59,110,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(5,59,110,0.12)]"
                 >
                   <div className="aspect-[16/10] w-full overflow-hidden bg-surface-100">
                     <img
@@ -444,7 +444,7 @@ export default async function HomePage({
                     </h3>
                     <p className="text-xs font-medium text-ink-500">{card.tag}</p>
                   </div>
-                  <div className="flex h-7 w-7 shrink-0 items-center justify-center bg-accent-50 text-accent-500">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-accent-50 text-accent-500">
                     <Check className="h-4 w-4 stroke-[2.5]" />
                   </div>
                 </div>
@@ -473,10 +473,10 @@ export default async function HomePage({
             {process.steps.map((step) => (
               <div
                 key={step.number}
-                className="bg-white p-7 shadow-[0_6px_26px_rgba(5,59,110,0.08)]"
+                className="rounded-2xl border border-surface-100 bg-white p-7 shadow-[0_6px_26px_rgba(5,59,110,0.08)]"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center bg-accent-500 font-display text-sm font-bold text-white">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-500 font-display text-sm font-bold text-white">
                     {step.number}
                   </div>
                   <div>
@@ -515,7 +515,7 @@ export default async function HomePage({
       <section className="bg-cloudy py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center lg:grid-cols-12">
-            <div className="overflow-hidden bg-surface-100 lg:col-start-1 lg:col-end-8 lg:row-start-1">
+            <div className="overflow-hidden rounded-2xl bg-surface-100 shadow-md lg:col-start-1 lg:col-end-8 lg:row-start-1">
               <img
                 src={spotlight.image}
                 alt={spotlight.imageAlt}
@@ -523,7 +523,7 @@ export default async function HomePage({
               />
             </div>
 
-            <div className="relative z-10 -mt-10 mx-3 bg-surface-50 p-7 sm:mx-6 sm:p-10 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:mx-0 lg:mt-0 lg:p-12">
+            <div className="relative z-10 -mt-10 mx-3 rounded-2xl bg-surface-50 p-7 shadow-xl sm:mx-6 sm:p-10 lg:col-start-7 lg:col-end-13 lg:row-start-1 lg:mx-0 lg:mt-0 lg:p-12">
               <h2 className="font-display text-2xl font-semibold leading-snug text-navy-900 sm:text-[32px]">
                 {spotlight.heading}
               </h2>
@@ -584,8 +584,8 @@ export default async function HomePage({
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-12">
-            {/* 60% Left White Card with 3px orange top rule + angled pass graphic */}
-            <div className="flex flex-col justify-between gap-6 border-t-[3px] border-accent-500 bg-white p-7 shadow-[0_6px_26px_rgba(5,59,110,0.08)] sm:flex-row sm:items-center sm:p-9 lg:col-span-7">
+            {/* 60% Left White Card with 3px accent top rule + angled pass graphic */}
+            <div className="flex flex-col justify-between gap-6 overflow-hidden rounded-2xl border-t-[3px] border-accent-500 bg-white p-7 shadow-[0_6px_26px_rgba(5,59,110,0.08)] sm:flex-row sm:items-center sm:p-9 lg:col-span-7">
               <div>
                 <h3 className="font-display text-xl font-semibold text-navy-900">
                   {locale === "ms" ? "Termasuk Dalam Setiap Kerja" : "Included on Every Job"}
@@ -617,8 +617,8 @@ export default async function HomePage({
               </div>
             </div>
 
-            {/* 40% Right White Card with 3px orange top rule */}
-            <div className="flex flex-col justify-between border-t-[3px] border-accent-500 bg-white p-7 shadow-[0_6px_26px_rgba(5,59,110,0.08)] sm:p-9 lg:col-span-5">
+            {/* 40% Right White Card with 3px accent top rule */}
+            <div className="flex flex-col justify-between overflow-hidden rounded-2xl border-t-[3px] border-accent-500 bg-white p-7 shadow-[0_6px_26px_rgba(5,59,110,0.08)] sm:p-9 lg:col-span-5">
               <div>
                 <h3 className="font-display text-xl font-semibold text-navy-900">
                   {locale === "ms"

@@ -35,7 +35,7 @@ export function WhatsAppComposer({
 
   return (
     <div
-      className={`border border-white/15 bg-navy-900/75 ${
+      className={`rounded-2xl border border-white/15 bg-navy-900/75 ${
         compact ? "p-5 sm:p-6" : "p-6 sm:p-8"
       }`}
     >
@@ -51,7 +51,7 @@ export function WhatsAppComposer({
             id="rw-service-select"
             value={selectedService}
             onChange={(e) => setSelectedService(e.target.value)}
-            className="mt-2 w-full border border-white/20 bg-white px-3.5 py-3 text-sm font-medium text-navy-900 focus:border-accent-500 focus:outline-none"
+            className="mt-2 w-full rounded-xl border border-white/20 bg-white px-3.5 py-3 text-sm font-medium text-navy-900 focus:border-accent-500 focus:outline-none"
           >
             {services.map((service) => (
               <option key={service.slug} value={service.name}>
@@ -89,7 +89,7 @@ export function WhatsAppComposer({
                 ? "cth: Cheras, Puchong, Setapak"
                 : "e.g. Cheras, Puchong, Setapak"
             }
-            className="mt-2 w-full border border-white/20 bg-white px-3.5 py-3 text-sm text-navy-900 placeholder:text-slate-400 focus:border-accent-500 focus:outline-none"
+            className="mt-2 w-full rounded-xl border border-white/20 bg-white px-3.5 py-3 text-sm text-navy-900 placeholder:text-slate-400 focus:border-accent-500 focus:outline-none"
           />
         </div>
       </div>

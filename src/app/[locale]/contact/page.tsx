@@ -32,9 +32,9 @@ export default async function ContactPage({
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
           {/* Direct Contact Details */}
           <div className="space-y-4 lg:col-span-5">
-            <div className="border border-surface-100 border-t-4 border-t-accent-500 bg-white p-6 shadow-xs">
+            <div className="overflow-hidden rounded-2xl border border-surface-100 border-t-4 border-t-accent-500 bg-white p-6 shadow-xs">
               <div className="flex items-start gap-3.5">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-navy-900 text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-white">
                   <Phone className="h-5 w-5 text-accent-500" />
                 </div>
                 <div>
@@ -51,7 +51,7 @@ export default async function ContactPage({
               </div>
             </div>
 
-            <div className="border border-surface-100 bg-white p-6 shadow-xs">
+            <div className="rounded-2xl border border-surface-100 bg-white p-6 shadow-xs">
               <div className="space-y-4 text-sm text-ink-600">
                 <div className="flex items-start gap-3">
                   <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent-500" />
@@ -90,7 +90,7 @@ export default async function ContactPage({
           </div>
 
           {/* Interactive WhatsApp Quote Builder */}
-          <div className="bg-navy-900 p-6 text-white shadow-md sm:p-8 lg:col-span-7">
+          <div className="rounded-2xl bg-navy-900 p-6 text-white shadow-md sm:p-8 lg:col-span-7">
             <p className="font-display text-xs font-bold uppercase tracking-[0.14em] text-accent-500">
               {bottomCta.eyebrow}
             </p>

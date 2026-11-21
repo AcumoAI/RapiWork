@@ -135,6 +135,20 @@ export function Footer({ content }: FooterProps) {
         </div>
       </div>
 
+      {/* Local Service Areas SEO Band */}
+      <div className="border-t border-surface-200 bg-surface-100/60 py-5 text-xs text-ink-600">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <span className="font-display font-bold uppercase tracking-wider text-navy-900">
+              {locale === "ms" ? "Kawasan Liputan Operasi:" : "Klang Valley Service Hubs:"}
+            </span>
+            <p className="leading-relaxed text-ink-600">
+              <span className="font-semibold text-accent-500">Puchong (Dispatch Hub)</span> • Petaling Jaya • Subang Jaya & USJ • Cheras • Setapak • Kepong • KLCC • Ampang • Mont Kiara • Bangsar • Shah Alam • Seri Kembangan • Putrajaya • Cyberjaya
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Powered-By Bar */}
       <div className="bg-navy-950 text-slate-300">
         <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-4 text-center text-xs sm:px-6 lg:px-8">

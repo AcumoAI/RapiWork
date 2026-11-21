@@ -1,6 +1,51 @@
+import type { Metadata } from "next";
 import { ProjectsGallery } from "@/components/ProjectsGallery";
 import { WhatsAppComposer } from "@/components/WhatsAppComposer";
 import { getContent } from "@/lib/content";
+import { buildBreadcrumbJsonLd, buildPageMetadata, GLOBAL_SEO_KEYWORDS } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isMs = locale === "ms";
+
+  const title = isMs
+    ? "Galeri Projek Siap Baiki & Ubahsuai Rumah KL & Selangor | RapiWorks KL"
+    : "Completed Home Improvement & Repair Projects in KL & Selangor | RapiWorks KL";
+
+  const description = isMs
+    ? "Lihat projek siap siling kapur L-box, pendawaian lampu elektrik, pasang aircond inverter, baiki paip bocor dan cat rumah di Cheras, Setapak, Kepong, KLCC, Mont Kiara dan Ampang."
+    : "View completed residential and commercial aircond, electrical, plumbing, plaster ceiling, and house painting projects in Cheras, Setapak, Kepong, KLCC, Mont Kiara, Ampang & Puchong.";
+
+  const keywords = isMs
+    ? [
+        "projek ubahsuai rumah kuala lumpur",
+        "contoh plaster ceiling kl",
+        "projek cat rumah cheras",
+        "hasil kerja pendawaian elektrik puchong",
+        "pemasangan aircond siap selangor",
+        ...GLOBAL_SEO_KEYWORDS.ms,
+      ]
+    : [
+        "home improvement projects kuala lumpur",
+        "completed plaster ceiling designs kl",
+        "house painting gallery selangor",
+        "aircond installation photos puchong",
+        "electrical wiring portfolio petaling jaya",
+        ...GLOBAL_SEO_KEYWORDS.en,
+      ];
+
+  return buildPageMetadata({
+    title,
+    description,
+    keywords,
+    path: "/projects",
+    locale: isMs ? "ms" : "en",
+  });
+}
 
 export default async function ProjectsPage({
   params,
@@ -10,8 +55,17 @@ export default async function ProjectsPage({
   const { locale } = await params;
   const content = getContent(locale);
 
+  const breadcrumbSchema = buildBreadcrumbJsonLd([
+    { name: locale === "ms" ? "Utama" : "Home", url: `/${locale}` },
+    { name: locale === "ms" ? "Galeri Projek" : "Our Projects", url: `/${locale}/projects` },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="sky-band-gradient border-b-[5px] border-accent-500 pb-14 pt-28 text-cloudy sm:pb-16 sm:pt-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="font-display text-xs font-bold uppercase tracking-[0.16em] text-white/90">

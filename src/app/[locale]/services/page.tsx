@@ -1,8 +1,51 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { ServiceTradeIcon } from "@/components/TradeIcons";
 import { buildWhatsAppUrl, getContent } from "@/lib/content";
+import { buildBreadcrumbJsonLd, buildPageMetadata, GLOBAL_SEO_KEYWORDS } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isMs = locale === "ms";
+
+  const title = isMs
+    ? "5 Perkhidmatan Utama Baiki & Ubahsuai Rumah KL & Selangor | RapiWorks KL"
+    : "Home Improvement & Repair Services in Kuala Lumpur & Selangor | RapiWorks KL";
+
+  const description = isMs
+    ? "5 servis teras di bawah satu kontraktor tempatan: Pemasangan aircond, pendawaian elektrik, perpaipan, siling kapur dan mengecat rumah di KL, Puchong, PJ, Subang Jaya & Cheras."
+    : "Five essential home trades under one accountable contractor: Aircond installation, electrical wiring, plumbing leak repair, plaster ceiling L-box, and house painting across KL & Selangor.";
+
+  const keywords = isMs
+    ? [
+        "servis rumah kuala lumpur",
+        "kontraktor rumah selangor",
+        "servis aircond elektrik paip puchong",
+        "tukang siling dan cat petaling jaya",
+        ...GLOBAL_SEO_KEYWORDS.ms,
+      ]
+    : [
+        "home improvement services kuala lumpur",
+        "home repair contractor selangor",
+        "aircond electrical plumbing puchong",
+        "plaster ceiling painting petaling jaya",
+        ...GLOBAL_SEO_KEYWORDS.en,
+      ];
+
+  return buildPageMetadata({
+    title,
+    description,
+    keywords,
+    path: "/services",
+    locale: isMs ? "ms" : "en",
+  });
+}
 
 export default async function ServicesPage({
   params,
@@ -13,8 +56,17 @@ export default async function ServicesPage({
   const content = getContent(locale);
   const { pages, services, bundleBanner } = content;
 
+  const breadcrumbSchema = buildBreadcrumbJsonLd([
+    { name: locale === "ms" ? "Utama" : "Home", url: `/${locale}` },
+    { name: locale === "ms" ? "Perkhidmatan" : "Services", url: `/${locale}/services` },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Clean Sky Blue Page Header */}
       <section className="sky-band-gradient border-b-[5px] border-accent-500 pb-14 pt-28 text-cloudy sm:pb-16 sm:pt-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

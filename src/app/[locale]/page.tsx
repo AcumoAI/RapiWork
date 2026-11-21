@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, Check, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
@@ -10,6 +11,39 @@ import { ServiceAreaLookup } from "@/components/ServiceAreaLookup";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { WhatsAppComposer } from "@/components/WhatsAppComposer";
 import { buildWhatsAppUrl, getContent } from "@/lib/content";
+import {
+  buildBreadcrumbJsonLd,
+  buildFaqJsonLd,
+  buildPageMetadata,
+  GLOBAL_SEO_KEYWORDS,
+} from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isMs = locale === "ms";
+
+  const title = isMs
+    ? "RapiWorks KL | Kontraktor Servis Aircond, Elektrik, Paip, Siling Kapur & Cat Rumah KL & Selangor"
+    : "RapiWorks KL | Aircond, Electrical, Plumbing, Plaster Ceiling & Painting in KL & Selangor";
+
+  const description = isMs
+    ? "Kontraktor pembaikan & ubahsuai rumah di Kuala Lumpur, Puchong, Petaling Jaya, Subang Jaya, Cheras & Shah Alam. Servis aircond, pendawaian elektrik, baiki paip bocor, siling plaster L-box & mengecat rumah."
+    : "Professional home improvement contractor serving Kuala Lumpur, Puchong, Petaling Jaya, Subang Jaya, Cheras & Shah Alam. Aircond servicing, electrical wiring, pipe leak repairs, L-box ceilings & painting.";
+
+  const keywords = isMs ? GLOBAL_SEO_KEYWORDS.ms : GLOBAL_SEO_KEYWORDS.en;
+
+  return buildPageMetadata({
+    title,
+    description,
+    keywords,
+    path: "/",
+    locale: isMs ? "ms" : "en",
+  });
+}
 
 export default async function HomePage({
   params,
@@ -40,6 +74,8 @@ export default async function HomePage({
       ? "Hai RapiWorks KL, saya ingin meminta sebut harga percuma untuk rumah/premis saya."
       : "Hi RapiWorks KL, I would like to request a free quotation for my property."
   );
+
+  const featuredProjects = projects.filter((project) => project.featured);
 
   const standardsCards =
     locale === "ms"
@@ -78,8 +114,21 @@ export default async function HomePage({
           },
         ];
 
+  const faqSchema = buildFaqJsonLd(faq.items);
+  const breadcrumbSchema = buildBreadcrumbJsonLd([
+    { name: locale === "ms" ? "Utama" : "Home", url: `/${locale}` },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* 1. FULL-BLEED DAYLIGHT HERO (Vibrant Sky Blue #0099FF scrim + Cloudy White #FDFDFE copy + Amber Red #E8250E primary CTA) */}
       <section className="relative overflow-hidden border-b-[5px] border-accent-500 bg-sky-600">
         <div className="absolute inset-0">
@@ -309,7 +358,7 @@ export default async function HomePage({
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {projects.map((project) => {
+            {featuredProjects.map((project) => {
               const quoteHref = buildWhatsAppUrl(
                 locale === "ms"
                   ? `Hai RapiWorks KL, saya ingin sebut harga untuk projek seperti "${project.title}" (${project.location}).`

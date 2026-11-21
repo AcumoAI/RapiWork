@@ -49,8 +49,8 @@ export function ProjectsGallery({ content }: ProjectsGalleryProps) {
         })}
       </div>
 
-      {/* Editorial 2-Column Project Cards — Sharp Rectangles, Zero Truncation */}
-      <div className="mt-10 grid gap-8 md:grid-cols-2">
+      {/* Editorial Project Cards — 3 Columns on Desktop */}
+      <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((project) => {
           const quoteHref = buildWhatsAppUrl(
             locale === "ms"
@@ -64,7 +64,7 @@ export function ProjectsGallery({ content }: ProjectsGalleryProps) {
               id={project.slug}
               className="group flex flex-col overflow-hidden rounded-2xl border border-surface-100 bg-white shadow-xs transition-shadow hover:shadow-md"
             >
-              <div className="aspect-[16/10] w-full overflow-hidden bg-surface-100">
+              <div className="aspect-[4/3] w-full overflow-hidden bg-surface-100">
                 <img
                   src={project.image}
                   alt={project.imageAlt}

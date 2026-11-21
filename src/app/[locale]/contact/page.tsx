@@ -1,7 +1,50 @@
+import type { Metadata } from "next";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { WhatsAppComposer } from "@/components/WhatsAppComposer";
 import { ServiceAreaLookup } from "@/components/ServiceAreaLookup";
 import { getContent } from "@/lib/content";
+import { buildBreadcrumbJsonLd, buildPageMetadata, GLOBAL_SEO_KEYWORDS } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isMs = locale === "ms";
+
+  const title = isMs
+    ? "Hubungi RapiWorks KL | Sebut Harga Pantas WhatsApp & Liputan Lembah Klang"
+    : "Contact RapiWorks KL | Fast WhatsApp Quote & Klang Valley Service Dispatch";
+
+  const description = isMs
+    ? "Hubungi RapiWorks KL di 011-2120 6259 atau pangkalan operasi Seri Manja Square One di Puchong. Sebut harga telus untuk servis aircond, elektrik, paip, siling kapur & cat rumah di KL & Selangor."
+    : "Contact RapiWorks KL at 011-2120 6259 or our Seri Manja Square One dispatch hub in Puchong. Instant WhatsApp quotes for aircond, electrical, plumbing, plaster ceiling & painting across KL & Selangor.";
+
+  const keywords = isMs
+    ? [
+        "hubungi tukang rumah kl",
+        "nombor kontraktor puchong",
+        "whatsapp tukang aircond elektrik",
+        "kontraktor seri manja square one",
+        ...GLOBAL_SEO_KEYWORDS.ms,
+      ]
+    : [
+        "contact home contractor kuala lumpur",
+        "puchong renovation contractor phone",
+        "whatsapp electrician plumber kl",
+        "rapiworks contact number",
+        ...GLOBAL_SEO_KEYWORDS.en,
+      ];
+
+  return buildPageMetadata({
+    title,
+    description,
+    keywords,
+    path: "/contact",
+    locale: isMs ? "ms" : "en",
+  });
+}
 
 export default async function ContactPage({
   params,
@@ -12,8 +55,17 @@ export default async function ContactPage({
   const content = getContent(locale);
   const { brand, pages, bottomCta } = content;
 
+  const breadcrumbSchema = buildBreadcrumbJsonLd([
+    { name: locale === "ms" ? "Utama" : "Home", url: `/${locale}` },
+    { name: locale === "ms" ? "Hubungi Kami" : "Contact", url: `/${locale}/contact` },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="sky-band-gradient border-b-[5px] border-accent-500 pb-14 pt-28 text-cloudy sm:pb-16 sm:pt-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="font-display text-xs font-bold uppercase tracking-[0.16em] text-white/90">

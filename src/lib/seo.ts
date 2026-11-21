@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://rapiworkskl.com";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-technician.jpg`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-technician.webp`;
 
 export interface AreaDetail {
   name: string;
@@ -352,11 +352,11 @@ export function buildLocalBusinessJsonLd(locale: "en" | "ms" = "en") {
     name: "RapiWorks KL - Home Improvement & Repair Services",
     alternateName: "RapiWorks KL",
     url: SITE_URL,
-    logo: `${SITE_URL}/images/hero-technician.jpg`,
+    logo: `${SITE_URL}/images/hero-technician.webp`,
     image: [
-      `${SITE_URL}/images/hero-technician.jpg`,
-      `${SITE_URL}/images/work/living-lbox-cassette.jpg`,
-      `${SITE_URL}/images/work/aircond-split-bedroom.jpg`,
+      `${SITE_URL}/images/hero-technician.webp`,
+      `${SITE_URL}/images/work/living-lbox-cassette.webp`,
+      `${SITE_URL}/images/work/aircond-split-bedroom.webp`,
     ],
     telephone: "+601121206259",
     email: "hello@rapiworkskl.com",

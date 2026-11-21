@@ -394,7 +394,7 @@ const enContent: SiteContent = {
         "Half a day to one day for a standard split unit; 2–3 days for two to three units or concealed piping.",
       materials:
         "Daikin, Panasonic, Mitsubishi or Midea inverter units · 0.71mm insulated copper coil · Armaflex insulation · UV-resistant trunking · 1.5mm PVC drainage pipe",
-      image: "/images/service-aircond.jpg",
+      image: "/images/service-aircond.webp",
       imageAlt: "Technician installing a modern wall-mounted inverter air conditioner in a Kuala Lumpur apartment",
       ctaLabel: "Aircond Services",
       bullets: [
@@ -498,7 +498,7 @@ const enContent: SiteContent = {
         "Most lighting and socket jobs finish in a day; a full DB upgrade or whole-unit rewiring takes 2–4 days.",
       materials:
         "Suruhanjaya Tenaga-compliant PVC cable (1.5mm²–4mm²) · Hager, Schneider or ABB breakers · MK or Clipsal switches and sockets · LED downlights and track systems · galvanised fan hooks",
-      image: "/images/service-electrical.jpg",
+      image: "/images/service-electrical.webp",
       imageAlt: "Modern Kuala Lumpur living space with newly wired black track spotlights, downlights, and wall dimmer switches",
       ctaLabel: "Electrical Services",
       bullets: [
@@ -602,7 +602,7 @@ const enContent: SiteContent = {
         "2–3 days for a typical three-bedroom condo; 4–6 days for a landed house exterior with repairs.",
       materials:
         "Dulux Weathershield & EasyClean · Nippon Paint Odour-less & Weatherbond · Jotun Fenomastic · alkali-resistant primer · acrylic caulk and skim coat",
-      image: "/images/service-painting.jpg",
+      image: "/images/service-painting.webp",
       imageAlt: "Freshly painted modern Kuala Lumpur condominium living room with neat masking and drop cloth protection",
       ctaLabel: "Painting Services",
       bullets: [
@@ -705,7 +705,7 @@ const enContent: SiteContent = {
         "2–4 days for a living and dining L-box; 1–2 days for a single flat room.",
       materials:
         "9mm and 12mm gypsum boards · galvanised iron framing · joint compound and paper tape · moisture-resistant boards for wet areas · LED cove profiles and downlight cut-outs",
-      image: "/images/service-ceiling.jpg",
+      image: "/images/service-ceiling.webp",
       imageAlt: "Modern perimeter L-box gypsum plaster ceiling with warm LED cove lighting and recessed downlights in a KL apartment",
       ctaLabel: "Ceiling Services",
       bullets: [
@@ -808,7 +808,7 @@ const enContent: SiteContent = {
         "Most repairs are completed in 1–3 hours; concealed pipe rerouting or a full bathroom refit takes 1–3 days.",
       materials:
         "PN16 PPR hot/cold pipe · brass compression fittings · stainless-steel braided hoses · ceramic-disc mixer taps · PVC waste and drainage fittings",
-      image: "/images/service-plumbing.jpg",
+      image: "/images/service-plumbing.webp",
       imageAlt: "Technician neatly installing a modern brushed-stainless kitchen mixer tap and PPR fittings",
       ctaLabel: "Plumbing Services",
       bullets: [
@@ -918,7 +918,7 @@ const enContent: SiteContent = {
     primaryCta: "Schedule Aircond Quote",
     secondaryCta: "Explore Aircond Details",
     secondaryHref: "/en/services/aircond-installation",
-    image: "/images/spotlight-aircond.jpg",
+    image: "/images/spotlight-aircond.webp",
     imageAlt: "RapiWorks technician checking manifold pressure gauges on a neatly mounted condo aircond condenser",
     whatsAppText:
       "Hi RapiWorks KL, I'd like to schedule an Aircond Installation quote in Kuala Lumpur / Selangor.",
@@ -981,7 +981,7 @@ const enContent: SiteContent = {
       summary:
         "Complete interior wall repainting across living, dining, and three bedrooms using Nippon Odour-less All-in-1. Included full hairline crack repair, skim-coat touch-ups, and a warm modern neutral palette.",
       materials: "Nippon Odour-less All-in-1, Wall Sealer & Skim Coat",
-      image: "/images/work/painting-hallway.jpg",
+      image: "/images/work/painting-hallway.webp",
       imageAlt: "Freshly painted 3-bedroom condominium interior in Cheras, Kuala Lumpur",
       featured: true,
     },
@@ -996,7 +996,7 @@ const enContent: SiteContent = {
       summary:
         "Custom-designed perimeter L-box gypsum ceiling with concealed warm LED strip light troughs, heavy-duty ceiling fan anchor rods, and precision-spaced recessed downlights.",
       materials: "Gypsum Board, 3000K LED Cove Strips & Heavy-Duty Fan Anchors",
-      image: "/images/work/plaster-circle-led.jpg",
+      image: "/images/work/plaster-circle-led.webp",
       imageAlt: "Modern perimeter L-box plaster ceiling with warm LED cove lighting in Setapak, KL",
       featured: true,
     },
@@ -1011,7 +1011,7 @@ const enContent: SiteContent = {
       summary:
         "Traced a hidden water pressure leak inside the bathroom wall slab without unnecessary hacking. Replaced the degraded galvanized pipe section with durable PN16 PPR hot/cold fusion piping and pressure-tested cleanly.",
       materials: "PN16 PPR Hot/Cold Fusion Pipe & Brass Fittings",
-      image: "/images/work/plumbing-leak-repair.jpg",
+      image: "/images/work/plumbing-leak-repair.webp",
       imageAlt: "Clean modern plumbing fixture and PPR pipe replacement work in Kepong, Kuala Lumpur",
       featured: true,
     },
@@ -1026,7 +1026,7 @@ const enContent: SiteContent = {
       summary:
         "Installation of architectural matte-black track spotlights, high-torque DC inverter ceiling fans, smart dimmer switches, and additional concealed kitchen power sockets compliant with ST safety guidelines.",
       materials: "Matte-Black Track System, DC Ceiling Fans & Smart Dimmers",
-      image: "/images/work/electrical-bedroom-fan.jpg",
+      image: "/images/work/electrical-bedroom-fan.webp",
       imageAlt: "Designer matte-black track spotlights and modern electrical switches in a KLCC luxury suite",
       featured: true,
     },
@@ -1041,7 +1041,7 @@ const enContent: SiteContent = {
       summary:
         "Supplied and installed three Daikin inverter split air conditioners (1.0HP and 2.0HP) with heavy-gauge insulated copper piping and condensation-free drainage routed neatly to the AC ledge.",
       materials: "Daikin Inverter Units, Heavy-Gauge Insulated Copper Pipes & Condo-Compliant Mounting",
-      image: "/images/work/aircond-cassette.jpg",
+      image: "/images/work/aircond-cassette.webp",
       imageAlt: "Multi-room Daikin inverter aircond installation in a Mont Kiara condominium",
     },
     {
@@ -1055,7 +1055,7 @@ const enContent: SiteContent = {
       summary:
         "High-pressure jet wash cleaning of fungal growth, weather-resistant sealer application, and two coats of Jotun Jotashield Extreme for maximum UV protection on a semi-detached home.",
       materials: "High-Pressure Wall Cleaning, Weatherproof Sealer & Jotun Jotashield Extreme",
-      image: "/images/work/exterior-repainting.jpg",
+      image: "/images/work/exterior-repainting.webp",
       imageAlt: "Exterior house repainting and weatherproofing in Ampang, Kuala Lumpur",
     },
     {
@@ -1069,7 +1069,7 @@ const enContent: SiteContent = {
       summary:
         "Completed plaster ceiling with perimeter L-box, warm LED cove lighting, recessed downlights, ceiling fan anchors, and a cassette aircond cut-out in the living hall.",
       materials: "L-Box with LED Cove, Downlights & Fan Point, Cassette Aircond Opening",
-      image: "/images/work/living-lbox-cassette.jpg",
+      image: "/images/work/living-lbox-cassette.webp",
       imageAlt: "Living hall L-box ceiling with LED cove lighting and cassette aircond in Kuala Lumpur",
     },
     {
@@ -1083,7 +1083,7 @@ const enContent: SiteContent = {
       summary:
         "Installed a concealed LED strip along the stair skirting line and a designer wall sconce for safe, even lighting on the staircase.",
       materials: "Concealed Stair LED Strip, Wall Sconce Wiring & Clean Switch Point",
-      image: "/images/work/electrical-stair-led.jpg",
+      image: "/images/work/electrical-stair-led.webp",
       imageAlt: "Concealed staircase LED strip and designer wall light in a Kuala Lumpur double-storey home",
     },
     {
@@ -1097,7 +1097,7 @@ const enContent: SiteContent = {
       summary:
         "Wall-mounted split aircond installed with neat indoor unit positioning, matching plaster ceiling downlights, and a warm LED cove around the room.",
       materials: "Split Indoor Unit, Neat Wall Mounting & Aligned Ceiling Lighting",
-      image: "/images/work/aircond-split-bedroom.jpg",
+      image: "/images/work/aircond-split-bedroom.webp",
       imageAlt: "Bedroom split aircond installation with cove ceiling and downlights in Kuala Lumpur",
     },
     {
@@ -1111,7 +1111,7 @@ const enContent: SiteContent = {
       summary:
         "Interior finishing around the TV feature wall with painted surfaces, cove lighting, and a clean living hall presentation after ceiling and lighting works.",
       materials: "Interior Wall Finishing, Cove Lighting Backdrop & Living Hall Presentation",
-      image: "/images/work/interior-tv-wall.jpg",
+      image: "/images/work/interior-tv-wall.webp",
       imageAlt: "Feature TV wall and interior finishing in a Kuala Lumpur living hall",
     },
   ],
@@ -1365,7 +1365,7 @@ const msContent: SiteContent = {
         "Separuh hari hingga satu hari untuk satu unit split; 2–3 hari untuk dua hingga tiga unit atau laluan paip tersembunyi.",
       materials:
         "Unit inverter Daikin, Panasonic, Mitsubishi atau Midea · paip tembaga bertebat 0.71mm · penebat Armaflex · trunking tahan UV · paip saliran PVC 1.5mm",
-      image: "/images/service-aircond.jpg",
+      image: "/images/service-aircond.webp",
       imageAlt: "Juruteknik memasang unit aircond split moden di ruang tamu kondominium Kuala Lumpur",
       ctaLabel: "Servis Aircond",
       bullets: [
@@ -1469,7 +1469,7 @@ const msContent: SiteContent = {
         "Kebanyakan kerja lampu dan soket siap dalam sehari; naik taraf DB atau pendawaian semula seluruh unit mengambil 2–4 hari.",
       materials:
         "Kabel PVC 1.5mm²–4mm² mematuhi Suruhanjaya Tenaga · breaker Hager, Schneider atau ABB · suis dan soket MK atau Clipsal · downlight dan sistem lampu trek LED · cangkuk kipas tergalvani",
-      image: "/images/service-electrical.jpg",
+      image: "/images/service-electrical.webp",
       imageAlt: "Ruang tamu moden Kuala Lumpur dengan lampu trek hitam, downlight dan suis dimmer baharu",
       ctaLabel: "Servis Elektrik",
       bullets: [
@@ -1573,7 +1573,7 @@ const msContent: SiteContent = {
         "2–3 hari untuk kondo tiga bilik biasa; 4–6 hari untuk luaran rumah bertanah termasuk kerja pembaikan.",
       materials:
         "Dulux Weathershield & EasyClean · Nippon Paint Odour-less & Weatherbond · Jotun Fenomastic · primer tahan alkali · caulk akrilik dan skim coat",
-      image: "/images/service-painting.jpg",
+      image: "/images/service-painting.webp",
       imageAlt: "Ruang tamu kondominium moden di Kuala Lumpur yang baru siap dicat dengan kemasan rapi",
       ctaLabel: "Servis Mengecat",
       bullets: [
@@ -1676,7 +1676,7 @@ const msContent: SiteContent = {
         "2–4 hari untuk L-box ruang tamu dan ruang makan; 1–2 hari untuk satu ruang rata.",
       materials:
         "Papan gipsum 9mm dan 12mm · rangka besi tergalvani · sebatian sambungan dan pita kertas · papan tahan lembap untuk kawasan basah · profil lampu cove dan potongan downlight LED",
-      image: "/images/service-ceiling.jpg",
+      image: "/images/service-ceiling.webp",
       imageAlt: "Siling kapur L-box moden dengan pencahayaan cove LED hangat di kondominium Kuala Lumpur",
       ctaLabel: "Servis Siling",
       bullets: [
@@ -1779,7 +1779,7 @@ const msContent: SiteContent = {
         "Kebanyakan pembaikan siap dalam 1–3 jam; laluan semula paip tersembunyi atau refit bilik air penuh mengambil 1–3 hari.",
       materials:
         "Paip PPR PN16 panas/sejuk · penyambung loyang · hos jalinan keluli tahan karat · pili mixer cakera seramik · penyambung buangan dan saliran PVC",
-      image: "/images/service-plumbing.jpg",
+      image: "/images/service-plumbing.webp",
       imageAlt: "Juruteknik memasang pili dapur keluli moden dan sambungan paip PPR dengan kemas",
       ctaLabel: "Servis Paip",
       bullets: [
@@ -1889,7 +1889,7 @@ const msContent: SiteContent = {
     primaryCta: "Tempah Sebut Harga Aircond",
     secondaryCta: "Butiran Servis Aircond",
     secondaryHref: "/ms/services/aircond-installation",
-    image: "/images/spotlight-aircond.jpg",
+    image: "/images/spotlight-aircond.webp",
     imageAlt: "Juruteknik RapiWorks memeriksa tolok tekanan pada unit pemampat aircond kondominium",
     whatsAppText:
       "Hai RapiWorks KL, saya ingin menempah sebut harga Pemasangan Aircond di Kuala Lumpur / Selangor.",
@@ -1952,7 +1952,7 @@ const msContent: SiteContent = {
       summary:
         "Kerja mengecat keseluruhan dinding dalaman menggunakan Nippon Odour-less All-in-1. Termasuk membaiki rekahan halus, kemasan skim coat, dan tona warna neutral moden.",
       materials: "Nippon Odour-less All-in-1, Sealer Dinding & Skim Coat",
-      image: "/images/work/painting-hallway.jpg",
+      image: "/images/work/painting-hallway.webp",
       imageAlt: "Kondominium 3 bilik tidur di Cheras yang baru siap dicat semula",
       featured: true,
     },
@@ -1967,7 +1967,7 @@ const msContent: SiteContent = {
       summary:
         "Reka bentuk siling kapur L-box perimeter dengan ruang lampu jalur LED hangat tersembunyi, rod penyangkut kipas siling tugas berat, dan downlight rata.",
       materials: "Papan Gipsum, Jalur LED 3000K & Rod Kipas Tugas Berat",
-      image: "/images/work/plaster-circle-led.jpg",
+      image: "/images/work/plaster-circle-led.webp",
       imageAlt: "Siling kapur L-box moden dengan lampu cove hangat di Setapak, Kuala Lumpur",
       featured: true,
     },
@@ -1982,7 +1982,7 @@ const msContent: SiteContent = {
       summary:
         "Mengesan kebocoran tekanan tersembunyi di dalam dinding bilik air. Bahagian paip lama yang reput diganti dengan paip PPR PN16 panas/sejuk tahan lasak dan diuji tekanan.",
       materials: "Paip Fusion PPR PN16 Panas/Sejuk & Kelengkapan Loyang",
-      image: "/images/work/plumbing-leak-repair.jpg",
+      image: "/images/work/plumbing-leak-repair.webp",
       imageAlt: "Kerja penukaran paip PPR dan kelengkapan paip moden di Kepong, Kuala Lumpur",
       featured: true,
     },
@@ -1997,7 +1997,7 @@ const msContent: SiteContent = {
       summary:
         "Pemasangan lampu trek hitam matte moden, kipas siling DC berkuasa tinggi, suis dimmer pintar, serta soket kuasa dapur tersembunyi tambahan mengikut piawaian ST.",
       materials: "Sistem Lampu Trek Hitam Matte, Kipas Siling DC & Dimmer Pintar",
-      image: "/images/work/electrical-bedroom-fan.jpg",
+      image: "/images/work/electrical-bedroom-fan.webp",
       imageAlt: "Pemasangan lampu trek moden dan suis elektrik di suite mewah KLCC",
       featured: true,
     },
@@ -2012,7 +2012,7 @@ const msContent: SiteContent = {
       summary:
         "Pemasangan 3 unit pendingin hawa Daikin Inverter (1.0HP & 2.0HP). Laluan paip tembaga tebal dan saliran air buang kemas ke ruang pemampat.",
       materials: "Unit Daikin Inverter, Paip Tembaga Tebal Bertebat & Mematuhi Syarat Pengurusan Kondo",
-      image: "/images/work/aircond-cassette.jpg",
+      image: "/images/work/aircond-cassette.webp",
       imageAlt: "Pemasangan aircond inverter berbilang bilik di kondominium Mont Kiara",
     },
     {
@@ -2026,7 +2026,7 @@ const msContent: SiteContent = {
       summary:
         "Cucian dinding tekanan tinggi menyingkirkan kulat, sapuan sealer kalis air dan 2 lapisan cat Jotun Jotashield Extreme kalis cuaca tropika.",
       materials: "Cucian Water Jet Tekanan Tinggi, Cat Jotun Jotashield & Perlindungan Tahan Lasak",
-      image: "/images/work/exterior-repainting.jpg",
+      image: "/images/work/exterior-repainting.webp",
       imageAlt: "Kerja mengecat luaran dan kalis cuaca rumah di Ampang, Kuala Lumpur",
     },
     {
@@ -2040,7 +2040,7 @@ const msContent: SiteContent = {
       summary:
         "Siling plaster siap dengan L-box, lampu LED cove, downlight, cangkuk kipas, dan bukaan aircond kaset di dewan tamu.",
       materials: "L-Box dengan Lampu Cove, Downlight & Mata Kipas, Bukaan Aircond Kaset",
-      image: "/images/work/living-lbox-cassette.jpg",
+      image: "/images/work/living-lbox-cassette.webp",
       imageAlt: "Siling L-box ruang tamu dengan lampu cove LED dan aircond cassette di Kuala Lumpur",
     },
     {
@@ -2054,7 +2054,7 @@ const msContent: SiteContent = {
       summary:
         "Pemasangan jalur LED tersembunyi di tepi tangga dan lampu dinding untuk pencahayaan tangga yang rata dan selamat.",
       materials: "Jalur LED Tangga, Pendawaian Lampu Dinding & Suis Kemas",
-      image: "/images/work/electrical-stair-led.jpg",
+      image: "/images/work/electrical-stair-led.webp",
       imageAlt: "Jalur LED tangga tersembunyi dan lampu dinding di rumah dua tingkat Kuala Lumpur",
     },
     {
@@ -2068,7 +2068,7 @@ const msContent: SiteContent = {
       summary:
         "Pemasangan aircond split dinding bersama downlight siling plaster dan lampu cove LED hangat di sekeliling bilik.",
       materials: "Unit Indoor Split, Pemasangan Dinding Kemas & Lampu Siling Seiring",
-      image: "/images/work/aircond-split-bedroom.jpg",
+      image: "/images/work/aircond-split-bedroom.webp",
       imageAlt: "Pemasangan aircond split bilik tidur dengan siling cove dan downlight di Kuala Lumpur",
     },
     {
@@ -2082,7 +2082,7 @@ const msContent: SiteContent = {
       summary:
         "Kemasan dalaman di sekeliling dinding TV dengan cat, lampu cove, dan dewan tamu yang kemas selepas kerja siling dan lampu.",
       materials: "Kemasan Dinding Dalaman, Latar Lampu Cove & Dewan Tamu Siap",
-      image: "/images/work/interior-tv-wall.jpg",
+      image: "/images/work/interior-tv-wall.webp",
       imageAlt: "Dinding TV aksen dan kemasan dalaman ruang tamu di Kuala Lumpur",
     },
   ],

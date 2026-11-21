@@ -133,7 +133,7 @@ export default async function HomePage({
       <section className="relative overflow-hidden border-b-[5px] border-accent-500 bg-sky-600">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-technician.jpg"
+            src="/images/hero-technician.webp"
             alt="RapiWorks KL technician arriving at a modern Kuala Lumpur home"
             className="h-full w-full object-cover object-[82%_top] sm:object-[76%_center] lg:object-right"
           />

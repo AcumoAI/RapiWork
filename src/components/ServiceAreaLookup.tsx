@@ -67,8 +67,8 @@ export function ServiceAreaLookup({ content }: ServiceAreaLookupProps) {
 
   const areaWhatsAppHref = buildWhatsAppUrl(
     locale === "ms"
-      ? `Hai RapiWorks KL, saya berada di ${matchedRegion || checkedArea || "Kuala Lumpur / Selangor"} dan ingin menyemak slot perkhidmatan.`
-      : `Hi RapiWorks KL, I'm located in ${matchedRegion || checkedArea || "Kuala Lumpur / Selangor"} and would like to check your next available service slot.`
+      ? `Hai rapiwork KL, saya berada di ${matchedRegion || checkedArea || "Kuala Lumpur / Selangor"} dan ingin menyemak slot perkhidmatan.`
+      : `Hi rapiwork KL, I'm located in ${matchedRegion || checkedArea || "Kuala Lumpur / Selangor"} and would like to check your next available service slot.`
   );
 
   return (

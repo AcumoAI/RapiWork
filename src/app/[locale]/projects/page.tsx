@@ -13,8 +13,8 @@ export async function generateMetadata({
   const isMs = locale === "ms";
 
   const title = isMs
-    ? "Galeri Projek Siap Baiki & Ubahsuai Rumah KL & Selangor | RapiWorks KL"
-    : "Completed Home Improvement & Repair Projects in KL & Selangor | RapiWorks KL";
+    ? "Galeri Projek Siap Baiki & Ubahsuai Rumah KL & Selangor | rapiwork KL"
+    : "Completed Home Improvement & Repair Projects in KL & Selangor | rapiwork KL";
 
   const description = isMs
     ? "Lihat projek siap siling kapur L-box, pendawaian lampu elektrik, pasang aircond inverter, baiki paip bocor dan cat rumah di Cheras, Setapak, Kepong, KLCC, Mont Kiara dan Ampang."

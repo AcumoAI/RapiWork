@@ -19,8 +19,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "RapiWorks KL | Aircond, Electrical, Plumbing, Plaster Ceiling & Painting Services in Kuala Lumpur & Selangor",
-    template: "%s | RapiWorks KL",
+    default: "rapiwork KL | Aircond, Electrical, Plumbing, Plaster Ceiling & Painting Services in Kuala Lumpur & Selangor",
+    template: "%s | rapiwork KL",
   },
   description:
     "Professional home improvement, aircond servicing & installation, licensed electrical wiring, plumbing leak repair, modern plaster ceiling L-box, and house painting across Kuala Lumpur, Puchong, Petaling Jaya, Subang Jaya & Cheras.",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     ...GLOBAL_SEO_KEYWORDS.en,
     ...GLOBAL_SEO_KEYWORDS.ms,
   ],
-  authors: [{ name: "RapiWorks KL", url: SITE_URL }],
-  creator: "RapiWorks KL",
-  publisher: "RapiWorks KL",
+  authors: [{ name: "rapiwork KL", url: SITE_URL }],
+  creator: "rapiwork KL",
+  publisher: "rapiwork KL",
   formatDetection: {
     email: true,
     address: true,
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     locale: "en_MY",
     alternateLocale: ["ms_MY"],
     url: SITE_URL,
-    siteName: "RapiWorks KL",
-    title: "RapiWorks KL | Aircond, Electrical, Plumbing, Plaster Ceiling & Painting",
+    siteName: "rapiwork KL",
+    title: "rapiwork KL | Aircond, Electrical, Plumbing, Plaster Ceiling & Painting",
     description:
       "Reliable home improvement, air conditioning installation, electrical, plumbing, plaster ceiling, and house painting services across Kuala Lumpur, Selangor, Putrajaya & Cyberjaya.",
     images: [
@@ -58,13 +58,13 @@ export const metadata: Metadata = {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "RapiWorks KL - Home Improvement & Repair Specialists in Kuala Lumpur & Selangor",
+        alt: "rapiwork KL - Home Improvement & Repair Specialists in Kuala Lumpur & Selangor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RapiWorks KL | Home Improvement & Repair in KL & Selangor",
+    title: "rapiwork KL | Home Improvement & Repair in KL & Selangor",
     description:
       "Trusted local contractor for Aircond, Electrical, Plumbing, Plaster Ceiling & Painting across KL & Selangor.",
     images: [DEFAULT_OG_IMAGE],

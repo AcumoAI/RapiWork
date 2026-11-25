@@ -264,12 +264,12 @@ export function buildWhatsAppUrl(message: string): string {
 const enContent: SiteContent = {
   locale: "en",
   brand: {
-    name: "RapiWorks KL",
+    name: "rapiwork KL",
     tagline: "Home Improvement & Repair",
     phoneDisplay: "011-2120 6259",
     phoneHref: "tel:+601121206259",
     whatsappBase: "https://wa.me/601121206259",
-    email: "hello@rapiworkskl.com",
+    email: "hello@rapiworkkl.com",
     addressShort: "Seri Manja Square One, Puchong",
     addressFull: "Seri Manja Square One, Puchong, Selangor, Malaysia",
     hoursShort: "Daily: 9:00 AM – 7:00 PM",
@@ -332,7 +332,7 @@ const enContent: SiteContent = {
     ],
   },
   whyChoose: {
-    eyebrow: "Why Local Homeowners Choose RapiWorks KL",
+    eyebrow: "Why Local Homeowners Choose rapiwork KL",
     heading: "Quality Workmanship Without the Stress",
     subheading:
       "You do not need to juggle five different sub-contractors or guess what a repair should cost. We keep scope, materials, and communication straightforward from first message to handover.",
@@ -363,7 +363,7 @@ const enContent: SiteContent = {
         description:
           "Send photos of your room or issue on WhatsApp for quick diagnostic feedback, straightforward site-visit booking, and real-time progress updates.",
         linkLabel: "Chat on WhatsApp",
-        href: "https://wa.me/601121206259?text=Hi%20RapiWorks%20KL%2C%20I%20would%20like%20to%20request%20a%20quotation.",
+        href: "https://wa.me/601121206259?text=Hi%20rapiwork%20KL%2C%20I%20would%20like%20to%20request%20a%20quotation.",
       },
     ],
     guaranteeLabel: "Our Service Guarantee",
@@ -479,7 +479,7 @@ const enContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hi RapiWorks KL, I'd like a quote for Aircond Installation. Property area: [Your Area]. Number of units / HP: ",
+        "Hi rapiwork KL, I'd like a quote for Aircond Installation. Property area: [Your Area]. Number of units / HP: ",
       featured: true,
     },
     {
@@ -583,7 +583,7 @@ const enContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hi RapiWorks KL, I'd like a quote for Electrical Services. Property area: [Your Area]. Work needed: ",
+        "Hi rapiwork KL, I'd like a quote for Electrical Services. Property area: [Your Area]. Work needed: ",
       featured: true,
     },
     {
@@ -687,7 +687,7 @@ const enContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hi RapiWorks KL, I'd like a quote for House Painting. Property area: [Your Area]. Approximate size / rooms: ",
+        "Hi rapiwork KL, I'd like a quote for House Painting. Property area: [Your Area]. Approximate size / rooms: ",
     },
     {
       slug: "plaster-ceiling",
@@ -790,7 +790,7 @@ const enContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hi RapiWorks KL, I'd like a quote for Plaster Ceiling installation. Property area: [Your Area]. Room / ceiling style: ",
+        "Hi rapiwork KL, I'd like a quote for Plaster Ceiling installation. Property area: [Your Area]. Room / ceiling style: ",
     },
     {
       slug: "plumbing",
@@ -893,7 +893,7 @@ const enContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hi RapiWorks KL, I need help with a Plumbing issue. Property area: [Your Area]. Issue description: ",
+        "Hi rapiwork KL, I need help with a Plumbing issue. Property area: [Your Area]. Issue description: ",
     },
   ],
   bundleBanner: {
@@ -903,7 +903,7 @@ const enContent: SiteContent = {
       "Combine house painting, new L-box plaster ceiling, electrical points, plumbing fixtures, and aircond installation under one coordinated timeline and one accountable contractor.",
     ctaLabel: "Discuss Your Project on WhatsApp",
     whatsAppText:
-      "Hi RapiWorks KL, I'm planning a multi-trade home renovation (painting / ceiling / electrical / aircond / plumbing) and would like to discuss a combined quote.",
+      "Hi rapiwork KL, I'm planning a multi-trade home renovation (painting / ceiling / electrical / aircond / plumbing) and would like to discuss a combined quote.",
   },
   spotlight: {
     eyebrow: "Featured Trade · Aircond & Cooling",
@@ -919,9 +919,9 @@ const enContent: SiteContent = {
     secondaryCta: "Explore Aircond Details",
     secondaryHref: "/en/services/aircond-installation",
     image: "/images/spotlight-aircond.webp",
-    imageAlt: "RapiWorks technician checking manifold pressure gauges on a neatly mounted condo aircond condenser",
+    imageAlt: "rapiwork technician checking manifold pressure gauges on a neatly mounted condo aircond condenser",
     whatsAppText:
-      "Hi RapiWorks KL, I'd like to schedule an Aircond Installation quote in Kuala Lumpur / Selangor.",
+      "Hi rapiwork KL, I'd like to schedule an Aircond Installation quote in Kuala Lumpur / Selangor.",
   },
   process: {
     eyebrow: "Simple 4-Step Process",
@@ -1195,8 +1195,8 @@ const enContent: SiteContent = {
       "Reliable multi-trade home improvement and repair services across Kuala Lumpur, Selangor, Putrajaya, and Cyberjaya—covering aircond installation, electrical, plumbing, plaster ceilings, and painting.",
     servicesHeading: "Our Services",
     coverageHeading: "Areas We Serve",
-    contactHeading: "Contact RapiWorks KL",
-    copyright: "© 2026 RapiWorks KL. All rights reserved.",
+    contactHeading: "Contact rapiwork KL",
+    copyright: "© 2026 rapiwork KL. All rights reserved.",
     complianceNote:
       "All electrical and structural works comply with applicable Malaysian building and safety regulations.",
   },
@@ -1207,7 +1207,7 @@ const enContent: SiteContent = {
     projectsTitle: "Completed Projects in Kuala Lumpur",
     projectsSubtitle:
       "Explore recent residential and commercial work completed across Cheras, Setapak, Kepong, KLCC, Mont Kiara, and Ampang.",
-    contactTitle: "Contact RapiWorks KL",
+    contactTitle: "Contact rapiwork KL",
     contactSubtitle:
       "Fastest response via WhatsApp—send your location, required service, and photos for an honest, itemised quotation.",
     includedHeading: "What's Included in This Service",
@@ -1235,12 +1235,12 @@ const enContent: SiteContent = {
 const msContent: SiteContent = {
   locale: "ms",
   brand: {
-    name: "RapiWorks KL",
+    name: "rapiwork KL",
     tagline: "Servis Renovasi & Pembaikan",
     phoneDisplay: "011-2120 6259",
     phoneHref: "tel:+601121206259",
     whatsappBase: "https://wa.me/601121206259",
-    email: "hello@rapiworkskl.com",
+    email: "hello@rapiworkkl.com",
     addressShort: "Seri Manja Square One, Puchong",
     addressFull: "Seri Manja Square One, Puchong, Selangor, Malaysia",
     hoursShort: "Setiap Hari: 9:00 PG – 7:00 PTG",
@@ -1303,7 +1303,7 @@ const msContent: SiteContent = {
     ],
   },
   whyChoose: {
-    eyebrow: "Mengapa Pilih RapiWorks KL",
+    eyebrow: "Mengapa Pilih rapiwork KL",
     heading: "Hasil Kerja Kemas Tanpa Pening Kepala",
     subheading:
       "Anda tidak perlu berurusan dengan lima kontraktor berbeza atau meneka kos pembaikan. Kami utamakan skop jelas, bahan berkualiti, dan komunikasi pantas.",
@@ -1334,7 +1334,7 @@ const msContent: SiteContent = {
         description:
           "Hantar gambar masalah atau ruang rumah di WhatsApp untuk maklum balas segera, temujanji lawatan tapak, dan kemas kini kerja.",
         linkLabel: "Mesej di WhatsApp",
-        href: "https://wa.me/601121206259?text=Hai%20RapiWorks%20KL%2C%20saya%20ingin%20meminta%20sebut%20harga.",
+        href: "https://wa.me/601121206259?text=Hai%20rapiwork%20KL%2C%20saya%20ingin%20meminta%20sebut%20harga.",
       },
     ],
     guaranteeLabel: "Jaminan Perkhidmatan Kami",
@@ -1450,7 +1450,7 @@ const msContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hai RapiWorks KL, saya ingin sebut harga Pemasangan Aircond. Kawasan: [Kawasan Anda]. Bilangan unit / HP: ",
+        "Hai rapiwork KL, saya ingin sebut harga Pemasangan Aircond. Kawasan: [Kawasan Anda]. Bilangan unit / HP: ",
       featured: true,
     },
     {
@@ -1554,7 +1554,7 @@ const msContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hai RapiWorks KL, saya ingin sebut harga Servis Elektrik. Kawasan: [Kawasan Anda]. Kerja diperlukan: ",
+        "Hai rapiwork KL, saya ingin sebut harga Servis Elektrik. Kawasan: [Kawasan Anda]. Kerja diperlukan: ",
       featured: true,
     },
     {
@@ -1658,7 +1658,7 @@ const msContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hai RapiWorks KL, saya ingin sebut harga Mengecat Rumah. Kawasan: [Kawasan Anda]. Saiz / bilangan bilik: ",
+        "Hai rapiwork KL, saya ingin sebut harga Mengecat Rumah. Kawasan: [Kawasan Anda]. Saiz / bilangan bilik: ",
     },
     {
       slug: "plaster-ceiling",
@@ -1761,7 +1761,7 @@ const msContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hai RapiWorks KL, saya ingin sebut harga Siling Kapur. Kawasan: [Kawasan Anda]. Ruang / reka bentuk: ",
+        "Hai rapiwork KL, saya ingin sebut harga Siling Kapur. Kawasan: [Kawasan Anda]. Ruang / reka bentuk: ",
     },
     {
       slug: "plumbing",
@@ -1864,7 +1864,7 @@ const msContent: SiteContent = {
         },
       ],
       whatsAppPrompt:
-        "Hai RapiWorks KL, saya perlukan bantuan Kerja Paip. Kawasan: [Kawasan Anda]. Masalah paip: ",
+        "Hai rapiwork KL, saya perlukan bantuan Kerja Paip. Kawasan: [Kawasan Anda]. Masalah paip: ",
     },
   ],
   bundleBanner: {
@@ -1874,7 +1874,7 @@ const msContent: SiteContent = {
       "Gabungkan kerja mengecat, siling kapur baharu, pendawaian elektrik, paip dan pemasangan aircond dalam satu projek tersusun di bawah satu kontraktor.",
     ctaLabel: "Bincang Projek di WhatsApp",
     whatsAppText:
-      "Hai RapiWorks KL, saya merancang projek renovasi gabungan (cat / siling / elektrik / aircond / paip) dan ingin mendapatkan sebut harga.",
+      "Hai rapiwork KL, saya merancang projek renovasi gabungan (cat / siling / elektrik / aircond / paip) dan ingin mendapatkan sebut harga.",
   },
   spotlight: {
     eyebrow: "Servis Pilihan · Aircond & Penyejukan",
@@ -1890,9 +1890,9 @@ const msContent: SiteContent = {
     secondaryCta: "Butiran Servis Aircond",
     secondaryHref: "/ms/services/aircond-installation",
     image: "/images/spotlight-aircond.webp",
-    imageAlt: "Juruteknik RapiWorks memeriksa tolok tekanan pada unit pemampat aircond kondominium",
+    imageAlt: "Juruteknik rapiwork memeriksa tolok tekanan pada unit pemampat aircond kondominium",
     whatsAppText:
-      "Hai RapiWorks KL, saya ingin menempah sebut harga Pemasangan Aircond di Kuala Lumpur / Selangor.",
+      "Hai rapiwork KL, saya ingin menempah sebut harga Pemasangan Aircond di Kuala Lumpur / Selangor.",
   },
   process: {
     eyebrow: "4 Langkah Mudah",
@@ -2166,8 +2166,8 @@ const msContent: SiteContent = {
       "Kontraktor renovasi dan pembaikan rumah yang dipercayai di Kuala Lumpur, Selangor, Putrajaya dan Cyberjaya—meliputi pemasangan aircond, elektrik, paip, siling kapur dan mengecat.",
     servicesHeading: "Perkhidmatan Kami",
     coverageHeading: "Kawasan Liputan",
-    contactHeading: "Hubungi RapiWorks KL",
-    copyright: "© 2026 RapiWorks KL. Hak cipta terpelihara.",
+    contactHeading: "Hubungi rapiwork KL",
+    copyright: "© 2026 rapiwork KL. Hak cipta terpelihara.",
     complianceNote:
       "Semua kerja elektrik dan struktur mematuhi peraturan bangunan dan keselamatan Malaysia yang berkenaan.",
   },
@@ -2178,7 +2178,7 @@ const msContent: SiteContent = {
     projectsTitle: "Projek Siap di Kuala Lumpur",
     projectsSubtitle:
       "Lihat projek kediaman dan komersial terkini yang disiapkan di Cheras, Setapak, Kepong, KLCC, Mont Kiara dan Ampang.",
-    contactTitle: "Hubungi RapiWorks KL",
+    contactTitle: "Hubungi rapiwork KL",
     contactSubtitle:
       "Maklum balas terpantas melalui WhatsApp—kongsi lokasi, jenis servis dan gambar untuk sebut harga yang telus.",
     includedHeading: "Skop Termasuk Dalam Servis Ini",

@@ -6,7 +6,7 @@ interface IconProps {
 
 /**
  * Sky Blue (#0099FF), Cloudy White (#FDFDFE), Amber Red (#E8250E), and Deep Ink (#082447)
- * custom vector icons & organic blob illustrations for RapiWorks KL.
+ * custom vector icons & organic blob illustrations for rapiwork KL.
  */
 
 export function AircondTradeIcon({ className = "h-8 w-8" }: IconProps) {
@@ -214,7 +214,7 @@ export function CredibilityCircleMark({
   );
 }
 
-export function RapiWorksPassGraphic({ className = "h-36 w-48" }: IconProps) {
+export function RapiworkPassGraphic({ className = "h-36 w-48" }: IconProps) {
   return (
     <svg viewBox="0 0 220 160" fill="none" className={className} aria-hidden="true">
       <path d="M24 98L128 48L198 84L94 136L24 98Z" fill="#0099FF" fillOpacity="0.16" />

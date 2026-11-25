@@ -8,11 +8,6 @@ out/
 # Cloudflare Wrangler
 .wrangler/
 
-# Sitemap
-sitemap.xml
-src/app/sitemap.ts
-sitemap.ts
-
 # Local reference screenshots & OS files
 bardi-screenshot.png
 .DS_Store

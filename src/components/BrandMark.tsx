@@ -18,7 +18,7 @@ export function BrandMark({
     <Link
       href={`/${locale}`}
       className="group inline-flex items-center gap-2 focus:outline-none"
-      aria-label="RapiWorks KL Home"
+      aria-label="rapiwork KL Home"
     >
       <div className="flex flex-col leading-none">
         <div className="flex items-baseline">
@@ -27,7 +27,7 @@ export function BrandMark({
               compact ? "text-[20px] sm:text-[22px]" : "text-[26px] sm:text-[28px]"
             } ${inverted ? "text-white" : "text-navy-900"}`}
           >
-            RapiWorks
+            rapiwork
           </span>
           <span
             className={`ml-0.5 inline-block rounded-full bg-accent-500 transition-transform duration-200 group-hover:scale-125 ${

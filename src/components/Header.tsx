@@ -26,8 +26,8 @@ export function Header({ content }: HeaderProps) {
 
   const quoteHref = buildWhatsAppUrl(
     locale === "ms"
-      ? "Hai RapiWorks KL, saya ingin mendapatkan sebut harga percuma."
-      : "Hi RapiWorks KL, I would like to request a free quotation."
+      ? "Hai rapiwork KL, saya ingin mendapatkan sebut harga percuma."
+      : "Hi rapiwork KL, I would like to request a free quotation."
   );
 
   return (

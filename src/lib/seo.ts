@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://rapiworkskl.com";
+export const SITE_URL = "https://rapiwork.com";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-technician.webp`;
 
 export interface AreaDetail {
@@ -250,7 +250,7 @@ export const GLOBAL_SEO_KEYWORDS: { en: string[]; ms: string[] } = {
     "home improvement shah alam",
     "home repair cyberjaya",
     "handyman putrajaya",
-    "rapiworks kl",
+    "rapiwork kl",
   ],
   ms: [
     "kontraktor ubahsuai rumah kuala lumpur",
@@ -266,7 +266,7 @@ export const GLOBAL_SEO_KEYWORDS: { en: string[]; ms: string[] } = {
     "servis membaiki rumah shah alam",
     "tukang rumah cyberjaya",
     "kontraktor pembaikan rumah putrajaya",
-    "rapiworks kl",
+    "rapiwork kl",
   ],
 };
 
@@ -292,9 +292,9 @@ export function buildPageMetadata({
   const enUrl = `${SITE_URL}/en${cleanPath === "/" ? "" : cleanPath}`;
   const msUrl = `${SITE_URL}/ms${cleanPath === "/" ? "" : cleanPath}`;
 
-  const finalTitle = title.includes("RapiWorks KL")
+  const finalTitle = title.includes("rapiwork KL")
     ? title
-    : `${title} | RapiWorks KL`;
+    : `${title} | rapiwork KL`;
 
   return {
     title: { absolute: finalTitle },
@@ -312,7 +312,7 @@ export function buildPageMetadata({
       title: finalTitle,
       description,
       url: canonicalUrl,
-      siteName: "RapiWorks KL",
+      siteName: "rapiwork KL",
       locale: locale === "ms" ? "ms_MY" : "en_MY",
       type: "website",
       images: [
@@ -349,8 +349,8 @@ export function buildLocalBusinessJsonLd(locale: "en" | "ms" = "en") {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${SITE_URL}/#business`,
-    name: "RapiWorks KL - Home Improvement & Repair Services",
-    alternateName: "RapiWorks KL",
+    name: "rapiwork KL - Home Improvement & Repair Services",
+    alternateName: "rapiwork KL",
     url: SITE_URL,
     logo: `${SITE_URL}/images/hero-technician.webp`,
     image: [
@@ -359,7 +359,7 @@ export function buildLocalBusinessJsonLd(locale: "en" | "ms" = "en") {
       `${SITE_URL}/images/work/aircond-split-bedroom.webp`,
     ],
     telephone: "+601121206259",
-    email: "hello@rapiworkskl.com",
+    email: "hello@rapiworkkl.com",
     priceRange: "RM",
     currenciesAccepted: "MYR",
     paymentAccepted: "Cash, Online Banking, DuitNow, Bank Transfer",
@@ -467,7 +467,7 @@ export function buildServiceJsonLd({
     image: image ? (image.startsWith("http") ? image : `${SITE_URL}${image}`) : DEFAULT_OG_IMAGE,
     provider: {
       "@type": "HomeAndConstructionBusiness",
-      name: "RapiWorks KL",
+      name: "rapiwork KL",
       telephone: "+601121206259",
       url: SITE_URL,
       address: {
@@ -523,7 +523,7 @@ export function buildWebSiteJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "RapiWorks KL",
+    name: "rapiwork KL",
     url: SITE_URL,
     description: "Reliable home improvement, aircond, electrical, plumbing, plaster ceiling, and house painting services in Kuala Lumpur, Selangor, Putrajaya & Cyberjaya.",
     publisher: {

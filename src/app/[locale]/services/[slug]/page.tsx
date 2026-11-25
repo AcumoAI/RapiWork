@@ -51,7 +51,7 @@ export async function generateMetadata({
     ? isMs
       ? seoData.titles.ms
       : seoData.titles.en
-    : `${service.name} | RapiWorks KL`;
+    : `${service.name} | rapiwork KL`;
 
   const description = seoData
     ? isMs

@@ -24,10 +24,10 @@ export function WhatsAppComposer({
 
   const message =
     locale === "ms"
-      ? `Hai RapiWorks KL, saya berminat dengan servis ${selectedService}.${
+      ? `Hai rapiwork KL, saya berminat dengan servis ${selectedService}.${
           area.trim() ? ` Kawasan: ${area.trim()}.` : ""
         } Saya akan lampirkan gambar ruang/masalah di sini.`
-      : `Hi RapiWorks KL, I would like a quotation for ${selectedService}.${
+      : `Hi rapiwork KL, I would like a quotation for ${selectedService}.${
           area.trim() ? ` Location: ${area.trim()}.` : ""
         } I will attach photos of the work here.`;
 

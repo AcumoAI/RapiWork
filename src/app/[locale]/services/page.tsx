@@ -15,8 +15,8 @@ export async function generateMetadata({
   const isMs = locale === "ms";
 
   const title = isMs
-    ? "5 Perkhidmatan Utama Baiki & Ubahsuai Rumah KL & Selangor | RapiWorks KL"
-    : "Home Improvement & Repair Services in Kuala Lumpur & Selangor | RapiWorks KL";
+    ? "5 Perkhidmatan Utama Baiki & Ubahsuai Rumah KL & Selangor | rapiwork KL"
+    : "Home Improvement & Repair Services in Kuala Lumpur & Selangor | rapiwork KL";
 
   const description = isMs
     ? "5 servis teras di bawah satu kontraktor tempatan: Pemasangan aircond, pendawaian elektrik, perpaipan, siling kapur dan mengecat rumah di KL, Puchong, PJ, Subang Jaya & Cheras."

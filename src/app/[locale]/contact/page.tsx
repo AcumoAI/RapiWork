@@ -14,12 +14,12 @@ export async function generateMetadata({
   const isMs = locale === "ms";
 
   const title = isMs
-    ? "Hubungi RapiWorks KL | Sebut Harga Pantas WhatsApp & Liputan Lembah Klang"
-    : "Contact RapiWorks KL | Fast WhatsApp Quote & Klang Valley Service Dispatch";
+    ? "Hubungi rapiwork KL | Sebut Harga Pantas WhatsApp & Liputan Lembah Klang"
+    : "Contact rapiwork KL | Fast WhatsApp Quote & Klang Valley Service Dispatch";
 
   const description = isMs
-    ? "Hubungi RapiWorks KL di 011-2120 6259 atau pangkalan operasi Seri Manja Square One di Puchong. Sebut harga telus untuk servis aircond, elektrik, paip, siling kapur & cat rumah di KL & Selangor."
-    : "Contact RapiWorks KL at 011-2120 6259 or our Seri Manja Square One dispatch hub in Puchong. Instant WhatsApp quotes for aircond, electrical, plumbing, plaster ceiling & painting across KL & Selangor.";
+    ? "Hubungi rapiwork KL di 011-2120 6259 atau pangkalan operasi Seri Manja Square One di Puchong. Sebut harga telus untuk servis aircond, elektrik, paip, siling kapur & cat rumah di KL & Selangor."
+    : "Contact rapiwork KL at 011-2120 6259 or our Seri Manja Square One dispatch hub in Puchong. Instant WhatsApp quotes for aircond, electrical, plumbing, plaster ceiling & painting across KL & Selangor.";
 
   const keywords = isMs
     ? [
@@ -33,7 +33,7 @@ export async function generateMetadata({
         "contact home contractor kuala lumpur",
         "puchong renovation contractor phone",
         "whatsapp electrician plumber kl",
-        "rapiworks contact number",
+        "rapiwork contact number",
         ...GLOBAL_SEO_KEYWORDS.en,
       ];
 

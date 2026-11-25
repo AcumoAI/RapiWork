@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowDown, ArrowRight, Check, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import {
-  RapiWorksPassGraphic,
+  RapiworkPassGraphic,
   ServiceTradeIcon,
   WhyChooseBlobEmblem,
 } from "@/components/TradeIcons";
@@ -27,8 +27,8 @@ export async function generateMetadata({
   const isMs = locale === "ms";
 
   const title = isMs
-    ? "RapiWorks KL | Kontraktor Servis Aircond, Elektrik, Paip, Siling Kapur & Cat Rumah KL & Selangor"
-    : "RapiWorks KL | Aircond, Electrical, Plumbing, Plaster Ceiling & Painting in KL & Selangor";
+    ? "rapiwork KL | Kontraktor Servis Aircond, Elektrik, Paip, Siling Kapur & Cat Rumah KL & Selangor"
+    : "rapiwork KL | Aircond, Electrical, Plumbing, Plaster Ceiling & Painting in KL & Selangor";
 
   const description = isMs
     ? "Kontraktor pembaikan & ubahsuai rumah di Kuala Lumpur, Puchong, Petaling Jaya, Subang Jaya, Cheras & Shah Alam. Servis aircond, pendawaian elektrik, baiki paip bocor, siling plaster L-box & mengecat rumah."
@@ -71,8 +71,8 @@ export default async function HomePage({
 
   const heroWhatsAppHref = buildWhatsAppUrl(
     locale === "ms"
-      ? "Hai RapiWorks KL, saya ingin meminta sebut harga percuma untuk rumah/premis saya."
-      : "Hi RapiWorks KL, I would like to request a free quotation for my property."
+      ? "Hai rapiwork KL, saya ingin meminta sebut harga percuma untuk rumah/premis saya."
+      : "Hi rapiwork KL, I would like to request a free quotation for my property."
   );
 
   const featuredProjects = projects.filter((project) => project.featured);
@@ -134,7 +134,7 @@ export default async function HomePage({
         <div className="absolute inset-0">
           <img
             src="/images/hero-technician.webp"
-            alt="RapiWorks KL technician arriving at a modern Kuala Lumpur home"
+            alt="rapiwork KL technician arriving at a modern Kuala Lumpur home"
             className="h-full w-full object-cover object-[82%_top] sm:object-[76%_center] lg:object-right"
           />
           <div
@@ -217,7 +217,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* 2. WHY LOCAL HOMEOWNERS CHOOSE RAPIWORKS KL (Soft Cool Gray — Organic Blobs + Centered H3 + Accent Divider Rule) */}
+      {/* 2. WHY LOCAL HOMEOWNERS CHOOSE rapiwork KL (Soft Cool Gray — Organic Blobs + Centered H3 + Accent Divider Rule) */}
       <section className="bg-surface-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -361,8 +361,8 @@ export default async function HomePage({
             {featuredProjects.map((project) => {
               const quoteHref = buildWhatsAppUrl(
                 locale === "ms"
-                  ? `Hai RapiWorks KL, saya ingin sebut harga untuk projek seperti "${project.title}" (${project.location}).`
-                  : `Hi RapiWorks KL, I'd like a quote for a similar scope to "${project.title}" (${project.location}).`
+                  ? `Hai rapiwork KL, saya ingin sebut harga untuk projek seperti "${project.title}" (${project.location}).`
+                  : `Hi rapiwork KL, I'd like a quote for a similar scope to "${project.title}" (${project.location}).`
               );
               return (
                 <article
@@ -641,7 +641,7 @@ export default async function HomePage({
                 </ul>
               </div>
               <div className="shrink-0 self-center">
-                <RapiWorksPassGraphic className="h-32 w-44 sm:h-36 sm:w-48" />
+                <RapiworkPassGraphic className="h-32 w-44 sm:h-36 sm:w-48" />
               </div>
             </div>
 

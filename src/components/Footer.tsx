@@ -10,8 +10,8 @@ export function Footer({ content }: FooterProps) {
   const { locale, brand, nav, services, footer } = content;
   const quoteHref = buildWhatsAppUrl(
     locale === "ms"
-      ? "Hai RapiWorks KL, saya ingin meminta sebut harga."
-      : "Hi RapiWorks KL, I would like to request a free quotation."
+      ? "Hai rapiwork KL, saya ingin meminta sebut harga."
+      : "Hi rapiwork KL, I would like to request a free quotation."
   );
 
   return (

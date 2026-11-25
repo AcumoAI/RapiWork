@@ -54,8 +54,8 @@ export function ProjectsGallery({ content }: ProjectsGalleryProps) {
         {filtered.map((project) => {
           const quoteHref = buildWhatsAppUrl(
             locale === "ms"
-              ? `Hai RapiWorks KL, saya ingin bertanya tentang projek seperti "${project.title}" (${project.location}).`
-              : `Hi RapiWorks KL, I'd like a quote for a similar project to "${project.title}" (${project.location}).`
+              ? `Hai rapiwork KL, saya ingin bertanya tentang projek seperti "${project.title}" (${project.location}).`
+              : `Hi rapiwork KL, I'd like a quote for a similar project to "${project.title}" (${project.location}).`
           );
 
           return (

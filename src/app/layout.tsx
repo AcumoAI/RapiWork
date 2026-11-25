@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   creator: "rapiwork KL",
   publisher: "rapiwork KL",
   formatDetection: {
-    email: true,
     address: true,
     telephone: true,
   },

@@ -38,12 +38,6 @@ export function Footer({ content }: FooterProps) {
                 </span>
                 {brand.regionsLine}
               </p>
-              <p>
-                <span className="font-semibold text-accent-500">Email: </span>
-                <a href={`mailto:${brand.email}`} className="hover:text-navy-900">
-                  {brand.email}
-                </a>
-              </p>
             </div>
           </div>
 
